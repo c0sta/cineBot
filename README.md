@@ -1,2 +1,2 @@
 # botnodejs
-Um chatbot para Telegrama, utilizando Node Js com a biblioteca Telegraf.
+Um chatbot para Telegram, utilizando Node Js com a biblioteca Telegraf.
