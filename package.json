@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "engines": {
     "node": "10.15.1"
-  } ,
+  },
   "description": "Um chatbot para o Telegram utilizando Node.Js em conjunto com a biblioteca Telegraf",
   "main": "main.js",
   "dependencies": {
     "telegraf": "^3.27.1",
-    "heroku": "^7.22.7",
-    "node": "10.15.1"
+    "heroku": "^7.22.7"
   },
   "devDependencies": {},
   "scripts": {
