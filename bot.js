@@ -1,49 +1,46 @@
-const Telegraf = require('telegraf')
-const Markup = require('telegraf/markup')
-const Extra = require('telegraf/extra')
-//const imdb = require('imdb-api')*
-const TOKEN = require('./config.js')
+const Bot = require('node-telegram-bot-api');
+const request = require('request');
+const token = require('./config');
 
-//Comentarios com * são relacionado ao IMDB
+const trigger = 'I want to travel!';
 
-// Creating bot *
-const bot = new Telegraf(TOKEN.telegraf_token, process.env.BOT_TOKEN)
-//const cli = new imdb.Client({apiKey: TOKEN.imdb}); *
+const bot = new Bot(token.telegramToken, {polling: true});
 
-// On start
-bot.start((ctx) => {
-  return ctx.reply('Olá, sou o GuiaFilmes :) \n Clique em 🌍 Local para verificar o Cinemark de sua cidade. \n Clique em 🎬 Programação para verificar os filmes em cartaz do Cinemark de sua região.', Markup
-  .keyboard([
-    ['🎬 Programação', '🌍 Local'], // Row1 with 2 buttons
-    ['🔍 Procurar']
-  ])
-    .resize()
-    .extra()
-  )
-})
-  
-  bot.hears('🔍 Procurar', ctx => ctx.reply('Digite "/procurar nomeDoFilme" '))
+const prepareData = (body) => {
+	const resposta = JSON.parse(body);
 
-  
-  bot.hears(/\/procurar (.+)/i, (ctx) => {
-      let resultado;
-      const movie = ctx.match[1];
-      //console.log(movie) 
-      cli.search({'name': movie}).then( (search, ctx) => {
-        for (const result of search.results) {
-          resultado = result;
-        }
-      })
-      
-      
-    })
+	var filme = {
+		id: "",
+		title: "",
+		duration: "",
+		image: "",
+	}
 
+	return resposta.filter( (session) => session !== undefined)
+		.map( session => `DAY: ${session.dayOfWeek}  
+		\n SESSIONS: \n${ session.movies.map( (movie)=>movie.title ).join('\n')}
+		
+		
+		`)
+		
+		 .join('\n');
 
+	
+};
 
+bot.on('message', (msg) => {
+	if (msg.text.toString() === trigger) {
+		return request(token.url, (err, resp, body) => {
+			bot.sendMessage(msg.chat.id, prepareData(body));
+		});
+	}
 
-  bot.hears('🌍 Local', ctx => ctx.reply('Local do cinema'))
-  bot.hears('🎬 Programação', ctx => ctx.reply('Programação do dia') )
-
-bot.launch()
+ 	bot.sendMessage(msg.chat.id, 'Hi, do you want to travel?', {
+		reply_markup: {
+		    	keyboard: [[trigger], ['Bulk option']]
+		    }
+		}
+	);
+});
 
 

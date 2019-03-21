@@ -7,9 +7,11 @@
   "description": "Um chatbot para o Telegram utilizando Node.Js em conjunto com a biblioteca Telegraf",
   "main": "main.js",
   "dependencies": {
+    "node-telegram-bot-api": "0.29.0",
+    "request": "2.83.0",
     "heroku": "^7.22.7",
-    "imdb-api": "^4.0.2",
-    "telegraf": "^3.27.1"
+    "node-telegram-bot-api": "^0.30.0"
+   
   },
   "devDependencies": {},
   "scripts": {
