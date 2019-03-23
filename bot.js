@@ -1,46 +1,45 @@
-const Bot = require('node-telegram-bot-api');
+const telegraf = require('telegraf');
+const Markup = require('telegraf/markup');
 const request = require('request');
 const token = require('./config');
 
-const trigger = 'I want to travel!';
+const sessoesURL = 'https://api-content.ingresso.com/v0/sessions/city/46/theater/url-key/cinemark-center-vale/partnership/moviebot'
+const filmeURL = ''
 
-const bot = new Bot(token.telegramToken, {polling: true});
+const bot = new telegraf(token.telegramToken);
 
-const prepareData = (body) => {
+const prepareData = (body, button) => {
 	const resposta = JSON.parse(body);
+	
 
-	var filme = {
-		id: "",
-		title: "",
-		duration: "",
-		image: "",
-	}
+	if(button === '🍿 Sessões'){
+		return resposta.filter( (session) => session !== undefined)
+		.map( session => `
+		Dia: ${session.dateFormatted} - ${session.dayOfWeek}\n
+		Sessões: ${session.movies.map( movie => movie.title) }\n
 
-	return resposta.filter( (session) => session !== undefined)
-		.map( session => `DAY: ${session.dayOfWeek}  
-		\n SESSIONS: \n${ session.movies.map( (movie)=>movie.title ).join('\n')}
-		
-		
 		`)
-		
 		 .join('\n');
-
+	}
 	
 };
 
-bot.on('message', (msg) => {
-	if (msg.text.toString() === trigger) {
-		return request(token.url, (err, resp, body) => {
-			bot.sendMessage(msg.chat.id, prepareData(body));
-		});
-	}
+bot.start((ctx) => {
+	return ctx.reply(`Olá ${ctx.from.first_name} ;) Então você está afim de ir ao cinema? \n Para checar os filmes em cartaz clique em "🎬 Em cartaz" \n Para ver as sessões  disponíveis clique em "🍿 Sessões"`,Markup
+	.keyboard([
+	  ['🎬 Em cartaz', '🍿 Sessões'], // Row1 with 2 buttons
 
- 	bot.sendMessage(msg.chat.id, 'Hi, do you want to travel?', {
-		reply_markup: {
-		    	keyboard: [[trigger], ['Bulk option']]
-		    }
-		}
-	);
+	])
+	.resize()
+	.extra())
 });
 
+bot.hears('🍿 Sessões', (ctx)=>{
+	return request(sessoesURL, (err, resp, body) => {
+		ctx.reply(prepareData(body, '🍿 Sessões'));
+	});	
+} )
 
+
+	
+bot.launch();
