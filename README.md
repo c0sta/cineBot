@@ -1,4 +1,4 @@
 # botnodejs
-Um chatbot para Telegram, utilizando Node Js com a biblioteca Telegraf.
+Chat Bot para compra de Ingressos no cinema, utilizando API da "Ingressos.com"
 
-Link: https://telegraf.js.org/#/?id=telegraf-js
+
