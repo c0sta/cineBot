@@ -9,7 +9,6 @@
   "dependencies": {
     "heroku": "^7.22.7",
     "request": "2.83.0",
-    "telebot": "^1.2.6",
     "telegraf": "^3.27.1"
   },
   "devDependencies": {},
