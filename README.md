@@ -5,7 +5,6 @@ MovieBot é um chatbot que lhe permite consultar os filmes em cartaz no Cinemark
 ### Informações
 O Bot foi feito para a plataforma Telegram, utilizando a biblioteca Telegraf do NodeJS, consultando dados na API do ingressos.com.
 
-![Filmes em Cartaz](https://drive.google.com/open?id=1JBKTJxGEkiBcaGBKsxWNBLice0uszdW3)
 
 ### Alunos
 Gabriel Costa M. &
