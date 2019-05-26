@@ -1,4 +1,4 @@
-# CineBot
+# CineBot (@GuiaFilmesBot)
 CineBot é um chatbot que nos permite ver todos os filmes em cartaz, as sessões e os filmes que serão lançados, de acordo com os cinemas disponiveis na região.
 
 ## Build With
