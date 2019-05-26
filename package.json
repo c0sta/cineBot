@@ -11,8 +11,7 @@
     "heroku": "^7.22.7",
     "request": "2.83.0",
     "request-promise": "^4.2.4",
-    "telegraf": "^3.29.0",
-
+    "telegraf": "^3.29.0"
   },
   "devDependencies": {},
   "scripts": {
