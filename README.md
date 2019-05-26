@@ -21,4 +21,4 @@ O Bot foi feito para o Telegram utilizando:
 ![](https://user-images.githubusercontent.com/36762964/58386071-fc0ac480-7fd0-11e9-9fe2-4fb99ff06e50.png)
 
 ## Author
-* **Gabriel C.M.
+* **Gabriel C.M.**
