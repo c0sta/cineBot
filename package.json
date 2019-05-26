@@ -12,11 +12,11 @@
     "request": "2.83.0",
     "request-promise": "^4.2.4",
     "telegraf": "^3.29.0",
-    "telegraf-inline-menu": "^3.5.2"
+
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node runthis"
+    "start": "node bot.js"
   },
   "repository": {
     "type": "git",
