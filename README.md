@@ -20,5 +20,8 @@ O Bot foi feito para o Telegram utilizando:
 * Sessões do filme selecionado 
 ![](https://user-images.githubusercontent.com/36762964/58386071-fc0ac480-7fd0-11e9-9fe2-4fb99ff06e50.png)
 
+* Filmes que serão lançados em breve
+![embreve](https://user-images.githubusercontent.com/36762964/62151590-09954100-b2d7-11e9-82ee-2b1b5be65894.PNG)
+
 ## Author
 * **Gabriel C.M.**
