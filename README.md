@@ -12,7 +12,7 @@ O Bot foi feito para o Telegram utilizando:
 ![welcome](https://user-images.githubusercontent.com/36762964/62151716-55e08100-b2d7-11e9-92d9-eb8f7533945e.PNG)
 
 * Cinemas presentes na cidade e que estão registrados na API do ingressos.com
-![Cinemas da cidade, cadastrados na API.](https://user-images.githubusercontent.com/36762964/58385972-370bf880-7fcf-11e9-9481-3d95a2ec0aa5.png)
+![cinemasCidade](https://user-images.githubusercontent.com/36762964/62151953-db643100-b2d7-11e9-8afe-4554f0c5846a.PNG)
 
 * Filmes em cartaz
 ![emCartaz](https://user-images.githubusercontent.com/36762964/62151694-4d884600-b2d7-11e9-96f3-a8320eb8f9fe.PNG)
