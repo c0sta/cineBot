@@ -8,17 +8,17 @@ O Bot foi feito para o Telegram utilizando:
 * [API Ingresso.com](https://www.ingresso.com/sao-paulo/home/)
 
 ## Printscreen's 
-* /start
-![/start](https://user-images.githubusercontent.com/36762964/58385967-1b085700-7fcf-11e9-88c0-b9f3e2f4a155.png)
+* Welcome 
+![welcome](https://user-images.githubusercontent.com/36762964/62151716-55e08100-b2d7-11e9-92d9-eb8f7533945e.PNG)
 
-* Cinemas presentes na cidade, que estão cadastrados na API.
+* Cinemas presentes na cidade e que estão registrados na API do ingressos.com
 ![Cinemas da cidade, cadastrados na API.](https://user-images.githubusercontent.com/36762964/58385972-370bf880-7fcf-11e9-9481-3d95a2ec0aa5.png)
 
 * Filmes em cartaz
-![](https://user-images.githubusercontent.com/36762964/58386065-e85f5e00-7fd0-11e9-86c6-9fcf4551ab65.png)
+![emCartaz](https://user-images.githubusercontent.com/36762964/62151694-4d884600-b2d7-11e9-96f3-a8320eb8f9fe.PNG)
 
 * Sessões do filme selecionado 
-![](https://user-images.githubusercontent.com/36762964/58386071-fc0ac480-7fd0-11e9-9fe2-4fb99ff06e50.png)
+![sessoes](https://user-images.githubusercontent.com/36762964/62151706-51b46380-b2d7-11e9-820c-dc0f0286ba34.PNG)
 
 * Filmes que serão lançados em breve
 ![embreve](https://user-images.githubusercontent.com/36762964/62151590-09954100-b2d7-11e9-82ee-2b1b5be65894.PNG)
