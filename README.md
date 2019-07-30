@@ -15,13 +15,13 @@ O Bot foi feito para o Telegram utilizando:
 ![cinemasCidade](https://user-images.githubusercontent.com/36762964/62152131-49105d00-b2d8-11e9-8be0-2f94e1718e9c.PNG)
 
 
-* Filmes em cartaz
+* Filmes em cartaz<br/>
 ![emCartaz](https://user-images.githubusercontent.com/36762964/62151694-4d884600-b2d7-11e9-96f3-a8320eb8f9fe.PNG)
 
-* Sessões do filme selecionado 
+* Sessões do filme selecionado <br/>
 ![sessoes](https://user-images.githubusercontent.com/36762964/62151706-51b46380-b2d7-11e9-820c-dc0f0286ba34.PNG)
 
-* Filmes que serão lançados em breve
+* Filmes que serão lançados em breve <br/>
 ![embreve](https://user-images.githubusercontent.com/36762964/62151590-09954100-b2d7-11e9-82ee-2b1b5be65894.PNG)
 
 ## Author
