@@ -8,10 +8,10 @@ O Bot foi feito para o Telegram utilizando:
 * [API Ingresso.com](https://www.ingresso.com/sao-paulo/home/)
 
 ## Printscreen's 
-* Welcome 
+* Welcome <br/>
 ![welcome](https://user-images.githubusercontent.com/36762964/62151716-55e08100-b2d7-11e9-92d9-eb8f7533945e.PNG)
 
-* Cinemas presentes na cidade e que estão registrados na API do ingressos.com
+* Cinemas presentes na cidade e que estão registrados na API do ingressos.com 
 ![cinemasCidade](https://user-images.githubusercontent.com/36762964/62152131-49105d00-b2d8-11e9-8be0-2f94e1718e9c.PNG)
 
 
