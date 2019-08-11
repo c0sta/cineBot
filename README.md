@@ -1,9 +1,9 @@
 # CineBot (@GuiaFilmesBot)
-CineBot é um chatbot que nos permite ver todos os filmes em cartaz, as sessões e os filmes que serão lançados, de acordo com os cinemas disponiveis na região.
+CineBot é um chatbot que nos permite ver os cinemas da região, os filmes que estão em cartaz, as sessões e os filmes que serão lançados.
 
-## Build With
+## Informações
 O Bot foi feito para o Telegram utilizando: 
-* **NodeJS**
+* [NodeJS](https://nodejs.org/en/)
 * [Telegraf.js](https://telegraf.js.org/)
 * [API Ingresso.com](https://www.ingresso.com/sao-paulo/home/)
 
